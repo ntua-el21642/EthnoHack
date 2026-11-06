@@ -65,10 +65,10 @@ def counts(plant_terms, indication_terms):
     return out
 
 
-def top_abstracts(plant_terms, indication_terms, n=5):
+def top_abstracts(plant_terms, indication_terms, n=5, sort="CITED desc"):
     q = build_query(plant_terms, indication_terms)
     d = _get({"query": q + " AND HAS_ABSTRACT:Y", "format": "json", "pageSize": n,
-              "resultType": "core", "sort": "CITED desc"})
+              "resultType": "core", **({"sort": sort} if sort else {})})
     return [{"pmid": r.get("pmid"), "title": r.get("title"), "year": r.get("pubYear"),
              "abstract": r.get("abstractText"), "pubTypes": (r.get("pubTypeList") or {}).get("pubType")}
             for r in d.get("resultList", {}).get("result", [])]

@@ -3,25 +3,10 @@ import json, collections, csv, sys, os
 sys.path.insert(0, os.path.dirname(__file__))
 import europepmc as ep
 
-CAT_TERMS = {
- "GAST": ["gastric","digestive","diarrhea","dysentery","hepatoprotective","constipation","dyspepsia"],
- "DERM": ["wound healing","dermatitis","skin ulcer","burn wound","antifungal skin"],
- "GYN": ["menstrual","emmenagogue","dysmenorrhea","uterine","lactation","labor induction"],
- "URO": ["diuretic","urolithiasis","kidney stone","urinary tract infection","cystitis"],
- "RESP": ["cough","asthma","bronchitis","expectorant","common cold"],
- "ANTI": ["antivenom","snake bite","antidote","venom neutralizing"],
- "NERV": ["epilepsy","analgesic","sedative","headache","anxiolytic","insomnia"],
- "MUSK": ["arthritis","rheumatism","gout","anti-inflammatory","sciatica"],
- "OPHT": ["conjunctivitis","ophthalmic","eye drops","cataract","trachoma"],
- "FEV": ["fever","antipyretic","malaria"],
- "PARA": ["anthelmintic","antiparasitic","helminth"],
- "ORAL": ["gingivitis","periodontitis","dental caries","mouthwash","stomatitis"],
- "OTO": ["otitis","ear infection"],
-}
+from evidence_table_terms import CAT_TERMS, TERMS
 SAFETY = ["toxicity","poisoning","hepatotoxicity","nephrotoxic","carcinogenic","adverse effects"]
 MIN_ANCIENT = 2
 
-TERMS = json.load(open("data/lexicon/search_terms.json", encoding="utf-8"))
 ext = {e["chapter"]: e for e in json.load(open("data/extractions/rules_all.json"))}
 tmap = json.load(open("data/lexicon/taxa_map.json", encoding="utf-8"))
 tax = {ch: v["genus"] for ch, v in tmap.items()}

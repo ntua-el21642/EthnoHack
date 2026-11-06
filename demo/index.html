@@ -1,0 +1,322 @@
+<meta charset="utf-8">
+<title>Pharmakon Atlas</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: masthead + stat strip, then a two-column explorer (ranked leads | dossier), then overview chart and method notes. */
+:root{
+  --bg:#EDF1EE; --panel:#F8FAF8; --ink:#14231F; --muted:#56655F; --line:#CBD6D0;
+  --accent:#1B6B58; --accent-ink:#FFFFFF; --accent-soft:#D5E8E0;
+  --gap:#B5651D; --gap-soft:#F1DFCB; --some:#6E9C8F; --well:#1B4F44; --warn:#A33B2B; --warn-soft:#F2D9D3;
+  --serif:"Gentium Book Plus","Palatino Linotype",Palatino,Georgia,serif;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0E1714; --panel:#15211D; --ink:#E4EEE9; --muted:#97A9A1; --line:#2A3A34;
+  --accent:#5CC4A6; --accent-ink:#06130F; --accent-soft:#1D3A32;
+  --gap:#E0924A; --gap-soft:#3A2A19; --some:#5E8F82; --well:#8FD6C0; --warn:#EE8E7C; --warn-soft:#3C1F1A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0E1714; --panel:#15211D; --ink:#E4EEE9; --muted:#97A9A1; --line:#2A3A34;
+  --accent:#5CC4A6; --accent-ink:#06130F; --accent-soft:#1D3A32;
+  --gap:#E0924A; --gap-soft:#3A2A19; --some:#5E8F82; --well:#8FD6C0; --warn:#EE8E7C; --warn-soft:#3C1F1A; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--sans);padding-block:0;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1180px;margin:0 auto}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2,h3{font-family:var(--serif);font-weight:700;text-wrap:balance;margin:0}
+h2{font-size:1.6rem;margin-bottom:6px}
+h3{font-size:1.1rem}
+.eyebrow{font:500 .72rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.mast{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:28px 48px;padding-block:36px 24px;align-items:end}
+.mast h1{font-size:clamp(2.4rem,6vw,4rem);line-height:1;letter-spacing:-.01em}
+.mast h1 .gr{display:block;font-style:italic;font-weight:400;color:var(--accent);font-size:.5em;margin-top:10px}
+.mast p{margin:14px 0 0;max-width:60ch;font-size:1.05rem}
+.q{border-left:3px solid var(--accent);padding:2px 0 2px 14px;font:italic 1.05rem/1.4 var(--serif);color:var(--muted)}
+.q b{display:block;font:500 .72rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;font-style:normal;margin-bottom:6px;color:var(--ink)}
+.theme{position:absolute;right:max(16px,env(safe-area-inset-right,0px));top:10px;background:none;border:1px solid var(--line);color:var(--muted);border-radius:6px;padding:4px 10px;font:500 .75rem var(--mono);cursor:pointer}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));border-block:1px solid var(--line)}
+.stat{padding:14px 16px 14px 0}
+.stat b{display:block;font:500 1.7rem/1.1 var(--mono);font-variant-numeric:tabular-nums}
+.stat span{font-size:.8rem;color:var(--muted)}
+.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;padding-block:26px}
+.flow>div{border-top:2px solid var(--ink);padding-top:10px}
+.flow h3{font-size:1rem;margin-bottom:4px}
+.flow p{margin:0;font-size:.88rem;color:var(--muted)}
+.flow .ex{font-family:var(--serif);font-size:.95rem;color:var(--ink);margin-top:6px}
+section{padding-block:26px}
+.lead{color:var(--muted);max-width:70ch;margin:0 0 16px}
+.controls{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;padding:12px 0;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5;border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+input[type=search]{flex:1 1 200px;min-width:0;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:8px 12px;font:inherit}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:4px 11px;font:500 .78rem var(--sans);cursor:pointer}
+.chip[aria-pressed=true]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.tog{display:flex;align-items:center;gap:6px;font-size:.82rem;color:var(--muted);cursor:pointer}
+.count{font:500 .78rem var(--mono);color:var(--muted);margin-left:auto}
+.explorer{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:24px;align-items:start;margin-top:14px}
+.list{max-height:78vh;overflow:auto;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+.row{display:grid;grid-template-columns:1fr auto;gap:2px 10px;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);padding:10px 14px;color:var(--ink);font:inherit;cursor:pointer}
+.row:last-child{border-bottom:0}
+.row:hover{background:var(--accent-soft)}
+.row[aria-current=true]{background:var(--accent-soft);box-shadow:inset 4px 0 0 var(--accent)}
+.row .n{font-family:var(--serif);font-weight:700;font-size:1.05rem}
+.row .n i{font-weight:400;color:var(--muted)}
+.row .m{grid-column:1;font-size:.78rem;color:var(--muted)}
+.row .bar{grid-column:1/3;height:5px;background:var(--line);border-radius:3px;overflow:hidden}
+.row .bar span{display:block;height:100%;background:var(--accent)}
+.pill{font:500 .68rem/1 var(--mono);letter-spacing:.04em;padding:4px 7px;border-radius:4px;white-space:nowrap;align-self:start}
+.pill.gap{background:var(--gap-soft);color:var(--gap)}
+.pill.some{background:var(--accent-soft);color:var(--accent)}
+.pill.well{background:var(--well);color:var(--bg)}
+.pill.warn{background:var(--warn-soft);color:var(--warn)}
+.dossier{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px 22px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 70px);max-height:calc(100vh - 90px);overflow:auto}
+.dossier h2{font-size:2rem;line-height:1.1}
+.dossier .gr{font-family:var(--serif);font-style:italic;color:var(--accent);font-size:1.15rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 4px}
+.sub{font:500 .72rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:22px 0 8px}
+.meters{display:grid;gap:8px}
+.meter{display:grid;grid-template-columns:130px 1fr 44px;gap:10px;align-items:center;font-size:.85rem}
+.meter .t{height:10px;background:var(--line);border-radius:5px;overflow:hidden}
+.meter .t span{display:block;height:100%;min-width:2px}
+.meter b{font:500 .85rem var(--mono);text-align:right;font-variant-numeric:tabular-nums}
+.pass{border-left:3px solid var(--line);padding:2px 0 2px 14px;margin:0 0 14px}
+.pass .gr{font:1.12rem/1.6 var(--serif)}
+.pass .en{font-size:.88rem;color:var(--muted);margin-top:2px}
+.pass .meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:4px;font:500 .72rem var(--mono);color:var(--muted)}
+.tagi{background:var(--accent-soft);color:var(--accent);border-radius:4px;padding:2px 6px}
+.prep{width:100%;border-collapse:collapse;font-size:.85rem}
+.prep th,.prep td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line)}
+.prep th{font:500 .7rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.prep td.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+.callout{border-radius:6px;padding:10px 14px;font-size:.88rem;margin-top:10px;background:var(--gap-soft);color:var(--ink);border:1px solid var(--gap)}
+.callout.safe{background:var(--warn-soft);border-color:var(--warn)}
+.paper{padding:10px 0;border-bottom:1px solid var(--line)}
+.paper:last-child{border:0}
+.paper a{font-weight:600;text-decoration:none}
+.paper a:hover{text-decoration:underline}
+.paper small{display:block;color:var(--muted);margin-top:2px}
+.btn{display:inline-block;margin-top:10px;padding:7px 12px;border:1px solid var(--accent);border-radius:6px;font-weight:600;font-size:.85rem;text-decoration:none}
+.note{font-size:.8rem;color:var(--muted)}
+.chart{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px;overflow-x:auto}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:.8rem;color:var(--muted);margin-bottom:8px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.method{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.method div{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px 18px}
+.method h3{margin-bottom:6px}
+.method ul{margin:0;padding-left:18px;font-size:.88rem}
+.method li{margin-bottom:4px}
+.empty{padding:30px 16px;color:var(--muted);text-align:center}
+footer{border-top:1px solid var(--line);padding-block:20px 40px;font-size:.8rem;color:var(--muted)}
+@media (max-width:860px){
+  .mast{grid-template-columns:1fr;padding-top:56px}
+  .explorer{grid-template-columns:1fr}
+  .list{max-height:46vh}
+  .dossier{position:static;max-height:none}
+  .meter{grid-template-columns:100px 1fr 40px}
+  .controls{position:static}
+}
+@media (prefers-reduced-motion:no-preference){.dossier{animation:in .25s ease}@keyframes in{from{opacity:.4;transform:translateY(4px)}}}
+</style>
+
+<div class="wrap" style="position:relative">
+  <button class="theme" id="theme" type="button" aria-label="Toggle colour theme">theme</button>
+  <header class="mast">
+    <div>
+      <div class="eyebrow">EthnoHack · Track 01 · Traditional Knowledge Mining</div>
+      <h1>Pharmakon Atlas<span class="gr">Διοσκουρίδου Περὶ ὕλης ἰατρικῆς</span></h1>
+      <p>Dioscorides recorded about 800 medicinal substances around 70 CE. The Atlas reads the Greek text, lines every plant and use up against modern research, and ranks the ancient claims that science has barely examined. Each lead comes with the passage, the preparation to replicate and the papers to start from.</p>
+    </div>
+    <div class="q"><b>The track question</b>What did centuries of texts know about medicinal plants, and does modern science agree?
+      <br><br>This page answers the second half by measuring how much modern research exists for each ancient claim. A missing study is a research gap, not a disagreement.</div>
+  </header>
+  <div class="stats" id="stats"></div>
+
+  <div class="flow">
+    <div><h3>1 · Read the Greek</h3><p>Wellmann's edition, 822 chapters, parsed into plant, part, use category, route and preparation.</p><div class="ex">πινόμενον μετ᾿ οἴνου → taken, with wine</div></div>
+    <div><h3>2 · Identify the plant</h3><p>Greek names resolved to genera through the Liddell–Scott–Jones lexicon, with a confidence level.</p><div class="ex">μήκων → <i>Papaver</i></div></div>
+    <div><h3>3 · Count modern evidence</h3><p>Europe PMC, strict title queries per genus and indication, clinical studies counted separately.</p><div class="ex">0 matching studies → gap</div></div>
+    <div><h3>4 · Compare preparations</h3><p>Ancient vehicles (honey, vinegar, wine) against what modern studies actually tested (ethanol, methanol).</p><div class="ex">artemisinin: the lesson of cold extraction</div></div>
+  </div>
+
+  <section id="explore">
+    <h2>Leads, ranked by evidence gap</h2>
+    <p class="lead">Priority = number of ancient statements × (1 − the pair's percentile of modern research). Select a lead to open its dossier.</p>
+    <div class="controls">
+      <input type="search" id="q" placeholder="Search genus or Greek name (Papaver, μήκων…)" aria-label="Search plants">
+      <div class="chips" id="stat-chips" role="group" aria-label="Evidence status"></div>
+      <label class="tog"><input type="checkbox" id="f-prep"> preparation mismatch</label>
+      <label class="tog"><input type="checkbox" id="f-safe"> safety signal</label>
+      <span class="count" id="count"></span>
+    </div>
+    <div class="chips" id="cat-chips" role="group" aria-label="Use category" style="margin-top:10px"></div>
+    <div class="explorer">
+      <div class="list" id="list" role="list"></div>
+      <article class="dossier" id="dossier" aria-live="polite"></article>
+    </div>
+  </section>
+
+  <section id="overview">
+    <h2>Where the gaps are</h2>
+    <p class="lead">Scored plant–use pairs by category. Ancient authors wrote most about the digestive tract and skin; the sparse evidence is concentrated in eye, urinary, gynaecological and antidote claims.</p>
+    <div class="chart"><div class="legend"><span><i style="background:var(--gap)"></i>research gap</span><span><i style="background:var(--some)"></i>some research</span><span><i style="background:var(--well)"></i>well studied</span></div><div id="chart"></div></div>
+  </section>
+
+  <section id="method">
+    <h2>Method and limits</h2>
+    <p class="lead">Every number on this page comes from code in the repository. These are the weak points.</p>
+    <div class="method">
+      <div><h3>What was measured</h3><ul>
+        <li>Extractor against Staub et al. 2016 (5,314 uses, 206 genera, 1,237 gold pairs): category F1 0.68, category plus route F1 0.48.</li>
+        <li>Plant names: 213 genera; LSJ-only mappings are medium confidence and the list marks them.</li>
+        <li>Europe PMC audit of retrieved papers, 3rd round: 54% relevant, 16% irrelevant.</li></ul></div>
+      <div><h3>What is not solved</h3><ul>
+        <li>The extractor is lexicon-based, not an LLM; some passages show a nearby sentence rather than the use itself.</li>
+        <li>The audit was judged by the author. A human spot check is still to be done.</li>
+        <li>Counts depend on query design: papers on "opium" or "morphine" are not matched to <i>Papaver</i>.</li>
+        <li>Preparation mismatch is a heuristic, and the artemisinin analogy is our hypothesis. Novelty is unverified.</li></ul></div>
+      <div><h3>How to read a gap</h3><ul>
+        <li>"Research gap" means no matching study in Europe PMC titles and abstracts with these queries. It does not mean the claim is wrong.</li>
+        <li>Safety flags are raw counts of toxicity papers. Several leads (hellebore, poppy) are toxic at doses used in antiquity.</li>
+        <li>Translations shown are unreviewed drafts.</li></ul></div>
+    </div>
+  </section>
+
+  <footer>
+    Text: Dioscorides, <i>De materia medica</i>, ed. Wellmann, via First1KGreek (CC BY-SA 4.0). Plant names: Liddell–Scott–Jones via Perseus (CC BY-SA). Evidence: Europe PMC. Evaluation: Staub et al. 2016, <i>Phytomedicine</i> (not redistributed).
+  </footer>
+</div>
+
+<script>
+(function(){
+var CAT_ORDER=null, DATA=null, state={q:"",status:"all",cat:"all",prep:false,safe:false,sel:null};
+var EN={
+ "II.177|καθαίρει δὲ ἄργεμα":"It clears corneal ulcers (argema) and films (nephelia) and soothes inflammations; the leaves applied as a poultice.",
+ "IV.22|πίνεται δὲ καὶ πρὸς σπάσματα":"The root is also drunk with sweet wine for spasms, ruptures, sciatica, strangury and diarrhoea.",
+ "II.176|καὶ μασηθεῖσα":"The root, chewed, draws phlegm; boiled in sweet wine and applied as a poultice it heals inflammations of the eyes and removes scars within them."
+};
+var $=function(i){return document.getElementById(i)};
+function el(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e}
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+var STATUS={"research gap":"gap","some research":"some","well studied":"well"};
+var STATUS_LABEL={"research gap":"research gap","some research":"some research","well studied":"well studied"};
+var MODE={INT:"taken by mouth",EXT:"applied to skin",CLY:"inserted / fumigation"};
+
+try{var th=localStorage.getItem("pa-theme");if(th)document.documentElement.setAttribute("data-theme",th)}catch(e){}
+$("theme").onclick=function(){var d=document.documentElement,cur=d.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");var n=cur==="dark"?"light":"dark";d.setAttribute("data-theme",n);try{localStorage.setItem("pa-theme",n)}catch(e){}};
+
+fetch("data.json").then(function(r){return r.json()}).then(init).catch(function(e){$("list").innerHTML='<div class="empty">Could not load data.json. Serve this folder with <code>python -m http.server</code>.</div>'});
+
+function init(d){
+  DATA=d; var S=d.stats;
+  var st=[[S.chapters,"chapters parsed"],[S.uses.toLocaleString("en"),"use statements extracted"],[S.genera,"genera identified"],[S.pairs,"plant–use pairs scored"],[S.gaps,"research gaps"],[S.prep_flagged+" / "+S.prep_checked,"preparation mismatches in top 60"]];
+  $("stats").innerHTML=st.map(function(x){return '<div class="stat"><b>'+x[0]+'</b><span>'+x[1]+'</span></div>'}).join("");
+  var cats=Object.keys(S.by_cat).sort(function(a,b){return tot(S.by_cat[b])-tot(S.by_cat[a])});
+  CAT_ORDER=cats;
+  var sc=$("stat-chips");
+  [["all","All"],["research gap","Gaps"],["some research","Some"],["well studied","Well studied"]].forEach(function(x){
+    var b=el("button","chip",x[1]);b.type="button";b.setAttribute("aria-pressed",x[0]==="all");b.onclick=function(){state.status=x[0];sync(sc,b);render()};b.dataset.v=x[0];sc.appendChild(b)});
+  var cc=$("cat-chips");
+  var all=el("button","chip","All categories");all.type="button";all.setAttribute("aria-pressed","true");all.dataset.v="all";cc.appendChild(all);
+  cats.forEach(function(c){var b=el("button","chip",esc(c));b.type="button";b.setAttribute("aria-pressed","false");b.dataset.v=c;cc.appendChild(b)});
+  cc.onclick=function(e){var b=e.target.closest(".chip");if(!b)return;state.cat=b.dataset.v;sync(cc,b);render()};
+  $("q").oninput=function(){state.q=this.value.trim().toLowerCase();render()};
+  $("f-prep").onchange=function(){state.prep=this.checked;render()};
+  $("f-safe").onchange=function(){state.safe=this.checked;render()};
+  state.sel=d.rows[0];
+  render(); chart(S);
+}
+function tot(o){return Object.keys(o).reduce(function(a,k){return a+o[k]},0)}
+function sync(group,btn){[].forEach.call(group.children,function(c){c.setAttribute("aria-pressed",c===btn)})}
+
+function filtered(){
+  return DATA.rows.filter(function(r){
+    if(state.status!=="all"&&r.status!==state.status)return false;
+    if(state.cat!=="all"&&r.cat_name!==state.cat)return false;
+    if(state.prep&&!(r.prep&&r.prep.mismatch))return false;
+    if(state.safe&&!r.safety_flag)return false;
+    if(state.q){var h=(r.genus+" "+r.heads.join(" ")+" "+r.query_terms.join(" ")).toLowerCase();if(h.indexOf(state.q)<0)return false}
+    return true}).sort(function(a,b){return b.priority-a.priority});
+}
+function render(){
+  var rows=filtered(); $("count").textContent=rows.length+" of "+DATA.rows.length+" leads";
+  var maxp=DATA.rows.reduce(function(m,r){return Math.max(m,r.priority)},1);
+  var L=$("list"); L.innerHTML="";
+  if(!rows.length){L.innerHTML='<div class="empty">No leads match these filters.</div>'}
+  rows.slice(0,150).forEach(function(r){
+    var b=el("button","row");b.type="button";b.setAttribute("role","listitem");
+    if(state.sel===r)b.setAttribute("aria-current","true");
+    var flags=(r.prep&&r.prep.mismatch?' <span class="pill warn" title="Ancient preparation not found in modern studies">prep</span>':"")+(r.safety_flag?' <span class="pill warn">safety</span>':"");
+    b.innerHTML='<span class="n"><i>'+esc(r.genus)+'</i> · '+esc(r.cat_name)+'</span><span class="pill '+STATUS[r.status]+'">'+STATUS_LABEL[r.status]+'</span>'+
+      '<span class="m">'+r.n_anc+' ancient statements · '+r.total+' studies'+flags+'</span><span class="bar"><span style="width:'+Math.max(2,r.priority/maxp*100)+'%"></span></span>';
+    b.onclick=function(){state.sel=r;render();if(matchMedia("(max-width:860px)").matches)$("dossier").scrollIntoView({behavior:"smooth",block:"start"})};
+    L.appendChild(b)});
+  if(rows.length>150)L.appendChild(el("div","empty","Showing the top 150. Narrow the filters to see more."));
+  dossier(state.sel&&rows.indexOf(state.sel)>=0?state.sel:(rows[0]||null));
+}
+function meter(label,val,max,color,suffix){
+  var w=max?Math.min(100,Math.sqrt(val/max)*100):0;
+  return '<div class="meter"><span>'+label+'</span><span class="t"><span style="width:'+Math.max(val?2:0,w)+'%;background:'+color+'"></span></span><b>'+val+(suffix||"")+'</b></div>'}
+function dossier(r){
+  var D=$("dossier"); if(!r){D.innerHTML='<div class="empty">Select a lead.</div>';return}
+  var q=r.query_terms.map(function(t){return '"'+t+'"'}).join(" OR ");
+  var eq='(TITLE:'+r.query_terms.map(function(t){return '"'+t+'"'}).join(' OR TITLE:')+') AND (TITLE_ABS:'+r.ind_terms.map(function(t){return '"'+t+'"'}).join(' OR TITLE_ABS:')+')';
+  var h='<div class="eyebrow">Dossier · '+esc(r.cat_name)+'</div><h2><i>'+esc(r.genus)+'</i></h2><div class="gr">'+esc(r.heads.join(" · "))+'</div>';
+  h+='<div class="tags"><span class="pill '+STATUS[r.status]+'">'+STATUS_LABEL[r.status]+'</span>';
+  if(r.conf!=="high")h+='<span class="pill some" title="Greek name to genus mapping">name match: '+r.conf+'</span>';
+  else h+='<span class="pill some">name match: high</span>';
+  if(r.prep&&r.prep.mismatch)h+='<span class="pill warn">preparation mismatch</span>';
+  if(r.safety_flag)h+='<span class="pill warn">safety signal</span>';
+  h+='</div>';
+  h+='<div class="sub">Evidence balance</div><div class="meters">'+
+    meter("Ancient statements",r.n_anc,12,"var(--accent)")+
+    meter("Modern studies",r.total,120,"var(--some)")+
+    meter("Clinical studies",r.clinical,20,"var(--well)")+
+    meter("Safety papers",r.safety,300,"var(--warn)")+'</div>';
+  h+='<p class="note">Modern bars use square-root scale. This pair sits at the '+Math.round(r.pct*100)+'th percentile of modern research among all scored pairs.</p>';
+  if(r.status==="research gap")h+='<div class="callout">Research gap: no or very few matching studies were found. That marks an opportunity to test the claim, not evidence that it fails.</div>';
+  if(r.safety_flag)h+='<div class="callout safe">Many toxicity papers exist for this genus. Check dose and route before any replication.</div>';
+  h+='<div class="sub">What the text says · Dioscorides</div>';
+  if(!r.passages.length)h+='<p class="note">No passage with preparation detail was extracted.</p>';
+  r.passages.forEach(function(p){
+    var key=p.ref+"|"+p.gr.slice(0,26),tr=null;Object.keys(EN).forEach(function(k){if(key.indexOf(k.split("|")[0]+"|")===0&&p.gr.indexOf(k.split("|")[1])===0)tr=EN[k]});
+    var tags=(p.vehicles||[]).concat(p.forms||[]).map(function(t){return '<span class="tagi">'+esc(t)+'</span>'}).join(" ");
+    h+='<div class="pass"><div class="gr" lang="grc">'+esc(p.gr)+'</div>'+(tr?'<div class="en">'+esc(tr)+' <span class="note">(unreviewed draft translation)</span></div>':'')+
+      '<div class="meta"><span>De materia medica '+esc(p.ref)+'</span><span>·</span><span>'+(MODE[p.mode]||p.mode)+'</span>'+(tags?'<span>·</span>'+tags:'')+'</div></div>'});
+  if(r.prep){
+    var pr=r.prep,keys=Object.keys(pr.ancient);
+    h+='<div class="sub">Preparation: ancient vs modern</div><div class="scroll"><table class="prep"><thead><tr><th>Ancient preparation</th><th>In text</th><th>Modern studies</th></tr></thead><tbody>'+
+      keys.map(function(k){return '<tr><td>'+esc(k)+'</td><td class="num">'+pr.ancient[k]+'</td><td class="num">'+(pr.modern_same[k]||0)+'</td></tr>'}).join("")+
+      '<tr><td>ethanol extract</td><td class="num">0</td><td class="num">'+pr.modern_alc.ethanol+'</td></tr><tr><td>methanol extract</td><td class="num">0</td><td class="num">'+pr.modern_alc.methanol+'</td></tr></tbody></table></div>';
+    h+=pr.mismatch?'<div class="callout">Hypothesis: modern work uses alcohol extracts while the ancient text specifies other vehicles. Artemisinin was found when researchers switched from a hot to a cold extraction described in an ancient text. A mismatch like this is worth a replication test, which we have not yet run.</div>':'<p class="note">Ancient and modern preparations overlap, so this pair is not flagged.</p>';
+  }
+  h+='<div class="sub">Where to start reading · Europe PMC</div>';
+  if(!r.papers.length)h+='<p class="note">No matching papers under the strict query.</p>';
+  r.papers.forEach(function(p){
+    h+='<div class="paper"><a href="https://pubmed.ncbi.nlm.nih.gov/'+esc(p.pmid)+'/" target="_blank" rel="noopener">'+esc(p.title)+'</a><small>PMID '+esc(p.pmid)+' · '+esc(p.year)+'</small><small>'+esc(p.snippet)+'</small></div>'});
+  h+='<a class="btn" target="_blank" rel="noopener" href="https://europepmc.org/search?query='+encodeURIComponent(eq)+'">Run this query on Europe PMC</a>';
+  h+='<p class="note" style="margin-top:12px">Query terms (plant): '+esc(r.query_terms.join(", "))+'. Indication terms: '+esc(r.ind_terms.join(", "))+'. Papers are listed in Europe PMC relevance order and have not all been read by a human.</p>';
+  D.innerHTML=h;
+}
+function chart(S){
+  var cats=CAT_ORDER,W=720,rowH=28,left=130,right=40,H=cats.length*rowH+30;
+  var max=Math.max.apply(null,cats.map(function(c){return tot(S.by_cat[c])}));
+  var sc=(W-left-right)/max;
+  var svg='<svg viewBox="0 0 '+W+' '+H+'" width="100%" role="img" aria-label="Scored pairs per category by evidence status" style="min-width:480px">';
+  for(var t=0;t<=max;t+=20){var x=left+t*sc;svg+='<line x1="'+x+'" x2="'+x+'" y1="4" y2="'+(H-22)+'" stroke="var(--line)" stroke-width="1"/><text x="'+x+'" y="'+(H-6)+'" fill="var(--muted)" font-size="11" text-anchor="middle" font-family="IBM Plex Mono, monospace">'+t+'</text>'}
+  cats.forEach(function(c,i){
+    var y=i*rowH+6,x=left,o=S.by_cat[c];
+    svg+='<text x="'+(left-8)+'" y="'+(y+14)+'" fill="var(--ink)" font-size="12" text-anchor="end" font-family="IBM Plex Sans, sans-serif">'+esc(c)+'</text>';
+    [["research gap","var(--gap)"],["some research","var(--some)"],["well studied","var(--well)"]].forEach(function(s){
+      var n=o[s[0]]||0;if(!n)return;var w=n*sc;
+      svg+='<rect x="'+x+'" y="'+y+'" width="'+w+'" height="18" fill="'+s[1]+'"><title>'+esc(c)+' · '+s[0]+': '+n+'</title></rect>';
+      if(w>20)svg+='<text x="'+(x+w/2)+'" y="'+(y+13)+'" fill="var(--bg)" font-size="11" text-anchor="middle" font-family="IBM Plex Mono, monospace">'+n+'</text>';
+      x+=w});
+    svg+='<text x="'+(x+6)+'" y="'+(y+13)+'" fill="var(--muted)" font-size="11" font-family="IBM Plex Mono, monospace">'+tot(o)+'</text>'});
+  $("chart").innerHTML=svg+'</svg>';
+}
+})();
+</script>

@@ -80,7 +80,7 @@ def extract_chapter(text):
         # one statement may carry several categories; keep all
         for c in cats:
             v, fo = prep_features(f)
-            uses.append({"cat": c, "mode": mode, "part": part or "?", "span": s[:160], "vehicles": v, "forms": fo})
+            uses.append({"cat": c, "mode": mode, "part": part or "?", "span": s[:320], "vehicles": v, "forms": fo})
     return uses
 
 def run(src, dst):
