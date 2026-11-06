@@ -30,7 +30,26 @@ def _get(params):
     last.raise_for_status()
 
 
-def build_query(plant_terms, indication_terms):
+EXCLUDE_TITLE = ["cancer","carcinoma","tumor","tumour","nanoparticle","nanoparticles","feed additive","pollen","allergen","broiler","poultry","growth performance"]
+
+
+EXCLUDE_TITLE_ABS = ["cattle","dairy cows","calves","fish","aquaculture","germination","seedling","nematode","sp. nov.","pollen","allergic rhinitis","immunotherapy","retracted","RETRACTED","rabbits fed","broiler"]
+EXCLUDE_TITLE += ["RETRACTED","retraction","correction"]
+
+
+def build_query(plant_terms, indication_terms, strict=True):
+    """strict: plant name must be in the TITLE (paper is about the plant), indication in title/abstract,
+    and papers about cancer/nanoparticles/feed/pollen are excluded (not the traditional use)."""
+    if strict:
+        p = " OR ".join(f'TITLE:"{t}"' for t in plant_terms)
+        i = " OR ".join(f'TITLE_ABS:"{t}"' for t in indication_terms)
+        ex = " OR ".join(f'TITLE:"{t}"' for t in EXCLUDE_TITLE)
+        exa = " OR ".join(f'TITLE_ABS:"{t}"' for t in EXCLUDE_TITLE_ABS)
+        return f"({p}) AND ({i}) AND NOT ({ex}) AND NOT ({exa})"
+    return build_query_loose(plant_terms, indication_terms)
+
+
+def build_query_loose(plant_terms, indication_terms):
     # restrict to title/abstract: bare terms also match full text/reference lists (noise)
     p = " OR ".join(f'TITLE_ABS:"{t}"' for t in plant_terms)
     i = " OR ".join(f'TITLE_ABS:"{t}"' for t in indication_terms)

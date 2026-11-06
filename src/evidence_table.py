@@ -5,25 +5,28 @@ import europepmc as ep
 
 CAT_TERMS = {
  "GAST": ["gastric","digestive","diarrhea","dysentery","hepatoprotective","constipation","dyspepsia"],
- "DERM": ["wound healing","skin","dermatitis","ulcer"],
- "GYN": ["menstrual","emmenagogue","uterine","gynecological","lactation"],
- "URO": ["diuretic","urinary","kidney","urolithiasis","bladder"],
- "RESP": ["cough","asthma","bronchitis","expectorant","respiratory"],
- "ANTI": ["antivenom","snake bite","antidote","venom"],
- "NERV": ["epilepsy","analgesic","sedative","headache","anxiety","neuroprotective"],
+ "DERM": ["wound healing","dermatitis","skin ulcer","burn wound","antifungal skin"],
+ "GYN": ["menstrual","emmenagogue","dysmenorrhea","uterine","lactation","labor induction"],
+ "URO": ["diuretic","urolithiasis","kidney stone","urinary tract infection","cystitis"],
+ "RESP": ["cough","asthma","bronchitis","expectorant","common cold"],
+ "ANTI": ["antivenom","snake bite","antidote","venom neutralizing"],
+ "NERV": ["epilepsy","analgesic","sedative","headache","anxiolytic","insomnia"],
  "MUSK": ["arthritis","rheumatism","gout","anti-inflammatory","sciatica"],
- "OPHT": ["ophthalmic","conjunctivitis","eye"],
+ "OPHT": ["conjunctivitis","ophthalmic","eye drops","cataract","trachoma"],
  "FEV": ["fever","antipyretic","malaria"],
  "PARA": ["anthelmintic","antiparasitic","helminth"],
- "ORAL": ["gingivitis","dental","mouthwash","oral"],
- "OTO": ["otitis","ear"],
+ "ORAL": ["gingivitis","periodontitis","dental caries","mouthwash","stomatitis"],
+ "OTO": ["otitis","ear infection"],
 }
 SAFETY = ["toxicity","poisoning","hepatotoxicity","nephrotoxic","carcinogenic","adverse effects"]
 MIN_ANCIENT = 2
 
 TERMS = json.load(open("data/lexicon/search_terms.json", encoding="utf-8"))
 ext = {e["chapter"]: e for e in json.load(open("data/extractions/rules_all.json"))}
-tax = json.load(open("data/lexicon/book3_taxa.json"))
+tmap = json.load(open("data/lexicon/taxa_map.json", encoding="utf-8"))
+tax = {ch: v["genus"] for ch, v in tmap.items()}
+conf = collections.defaultdict(set)
+for ch, v in tmap.items(): conf[v["genus"]].add(v["confidence"])
 by = collections.defaultdict(list)
 for ch, gen in tax.items(): by[gen].append(ch)
 
@@ -42,7 +45,7 @@ for gen in sorted(by):
                      "chapters": ";".join(sorted({s[0] for s in spans[c]})),
                      "modes": ";".join(sorted({s[1] for s in spans[c]})),
                      "modern_total": m["total"], "modern_clinical": m["clinical"],
-                     "safety_total": safety["total"], "example_span": spans[c][0][2]})
+                     "safety_total": safety["total"], "name_confidence": "review" if "review" in conf[gen] else ("high" if conf[gen] == {"high"} else "medium"), "example_span": spans[c][0][2]})
     print(gen, len(cats), flush=True)
 
 def label(r):

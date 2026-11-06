@@ -25,13 +25,12 @@ Wording rule: "no study found" = research gap/opportunity, never "science disagr
 - `src/europepmc.py` – cached client. Queries restricted to TITLE_ABS (full-text matches are noisy), but then counts are low because papers say "opium"/"morphine" not the plant name:
   needs term expansion (synonyms/MeSH) and relevance check of top abstracts before any count is used as a score.
 
-## Status / next
-Done: parser, Europe PMC client (live OK), scaffold pushed.
-Todo: (1) LLM extractor with fixed JSON schema, run on Book III first (most uses in Staub); (2) F1 vs Staub at pair level;
-(3) Greek name -> taxon via GBIF (check Wikidata SPARQL, OpenAlex needs mailto: 429 without); (4) evidence layer + preparation-mismatch detector;
-(5) retrospective test on a pre-registered list of known plant-derived drugs; (6) demo UI (search plant -> claims + evidence + heatmap); (7) README + pitch.
-Manual check of 30 evidence judgements for accuracy; report it.
-
-## Environment notes
-Cloud sandbox network is allowlisted: Europe PMC, PubMed, ChEMBL, GBIF OK. Subagents for batch extraction need the user's explicit OK (usage cost) – not yet given.
-Git commit trailers: Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com> + Claude-Session link.
+## Status / next (updated 2026-11-07 ~00:30)
+Done: parser; free rule/lexicon extractor (category F1 0.68 / +mode 0.48, 206 genera, 1237 gold pairs; chapter numbers not used);
+name->taxon map = manual (Book III) + LSJ lookup (Perseus, CC BY-SA; raw GitHub files downloaded outside repo) with confidence levels (`data/lexicon/taxa_map.json`);
+gap table (388 genus x category rows, strict Europe PMC queries, percentile-based status, priority = ancient statements x (1 - modern percentile)); relevance audits in `eval/` (v3: ~54% relevant, 16% irrelevant, judged by Claude only);
+preparation-mismatch detector (`src/prep_mismatch.py`, top 60 rows, 22 flagged).
+Todo: demo UI (search plant -> ancient passage + prep + evidence + heatmap); human spot-check of the audit; pre-registered retrospective test on known drugs;
+README + pitch. Known weaknesses: lexicon extractor (not LLM), mapping of LSJ-only names is medium confidence, indication term lists hand-written,
+counts depend on query design (opium/morphine not matched by plant name), audit judge is the author.
+Do not use "no study found" as "science disagrees".

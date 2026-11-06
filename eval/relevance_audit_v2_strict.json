@@ -1,0 +1,5 @@
+{"date":"2026-11-06","query":"strict: plant in TITLE, indication in TITLE_ABS, title exclusions (cancer, nanoparticle, feed, pollen...)","seed":11,"pairs":30,"papers_judged":83,
+ "R_relevant_to_traditional_use":33,"P_plant_relevant_other_context":23,"X_irrelevant":27,
+ "pairs_with_at_least_one_R_in_top3":19,
+ "judge":"Claude (reading titles and abstract openings); not independent of the author - needs a human spot check",
+ "failure_modes":["homonym genus names (Iris = eye iris; Quercus nematode paper)","over-general indication terms ('respiratory': fish anaesthesia, seed respiration; 'ocular'/'conjunctivitis': allergic rhinitis)","veterinary and feed studies (cows, poultry)","retracted paper","Artemisia pollen allergy immunotherapy"]}

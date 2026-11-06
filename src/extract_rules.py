@@ -19,7 +19,7 @@ LEX = {
  "URO": ["ουρ","νεφρ","κυστ","λιθ","στραγγουρ","δυσουρ","διουρ","ψαμμ"],
  "GYN": ["υστερ","εμμην","γυναικ","λοχει","εμβρυ","μητρ","κυησ","εκτρωμ","γαλα","καταμηνι","μαστ"],
  "ANDR": ["ορχ","αιδοι"],
- "ANTI": ["θηριοδηκτ","δηγμ","ερπετ","ιοβολ","θηριακ","αλεξιφαρμακ","ιον","ιου","ιους","φαλαγγ","σκορπι","εχιδν","θανασιμ"],
+ "ANTI": ["θηριοδηκτ","δηγμ","ερπετ","ιοβολ","ιοδηκτ","θηριακ","αλεξιφαρμακ","φαλαγγ","σκορπι","εχιδν","θανασιμ"],
  "FEV": ["πυρετ","ριγ","περιοδ","ριγοπυρετ"],
  "PARA": ["ελμιν","ασκαριδ","πλατειαν"],
  "NERV": ["νευρ","επιληπ","παραλυ","κεφαλαλγ","κεφαλ","λιθαργ","φρενιτ","μανι","κωματ","υπν","αγρυπν"],
@@ -42,6 +42,19 @@ PART_RULES = [
  ("FLOW", ["ανθ","ανθη"]), ("BARK", ["φλοι"]), ("EXUD", ["οπον","οποσ","δακρυ","κομμι","ρητιν","χυλ"]),
  ("HERB", ["βοτανη","ποα","κλων","κλημ","κλαδ"]), ("OIL", ["ελαιο"]), ("WOOD", ["ξυλ"]),
 ]
+VEHICLES = {"wine": ["οινο","οιν"], "vinegar": ["οξει","οξους","οξος","οξυ"], "water": ["υδατ","υδωρ","υδαρ"],
+            "honey": ["μελι","μελιτ","οξυμελ"], "oil": ["ελαι"], "milk": ["γαλακτ","γαλα"], "barley meal": ["αλφιτ"], "wax": ["κηρ"],
+            "rose oil": ["ροδινο"], "fat": ["στεατ","αδεπ","λιπ"]}
+FORMS = {"decoction": ["αφεψ","εψηθ","εψομεν","αφεψημα","αποζεμ"], "juice": ["χυλ","οπο"], "fresh": ["χλωρ","προσφατ"],
+         "dried": ["ξηρ","αυανθ"], "ash": ["τεφρ","κατακαυθ","κεκαυμεν"], "soaked/macerated": ["αποβρεχ","βρεχ","προβραχ","διιει"],
+         "poultice": ["καταπλασσ","καταπλασμ"], "pounded": ["κοπτ","κοπεισ","λειοτριβ","λειω","τριβ","κοψας"], "pessary": ["πεσσ"],
+         "ointment/salve": ["κηρωτ","μαλαγμ","αλειφ","χρισμ","λιπαρ"]}
+
+def prep_features(f):
+    v = [k for k, st in VEHICLES.items() if any(re.search(r"(?<![α-ω])" + re.escape(x), f) for x in st)]
+    fo = [k for k, st in FORMS.items() if any(re.search(r"(?<![α-ω])" + re.escape(x), f) for x in st)]
+    return v, fo
+
 SPLIT = re.compile(r"[·.;]|·")
 
 def first(token_list, text, default=None):
@@ -53,7 +66,8 @@ def first(token_list, text, default=None):
 def extract_chapter(text):
     sentences = [s.strip() for s in SPLIT.split(text) if s.strip()]
     uses, last_mode, last_part = [], "INT", None
-    for s in sentences:
+    for si, s in enumerate(sentences):
+        if si == 0 and len(s.split()) <= 2: continue   # headword only
         f = fold(s)
         mode = first(MODE_RULES, f, last_mode)
         part = first(PART_RULES, f, last_part)
@@ -65,7 +79,8 @@ def extract_chapter(text):
                 cats.append(cat)
         # one statement may carry several categories; keep all
         for c in cats:
-            uses.append({"cat": c, "mode": mode, "part": part or "?", "span": s[:160]})
+            v, fo = prep_features(f)
+            uses.append({"cat": c, "mode": mode, "part": part or "?", "span": s[:160], "vehicles": v, "forms": fo})
     return uses
 
 def run(src, dst):

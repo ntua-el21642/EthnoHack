@@ -1,0 +1,1108 @@
+[
+ {
+  "genus": "Papaver",
+  "category": "OPHT",
+  "priority": 7.02,
+  "ancient_prep": {
+   "poultice": 1,
+   "vinegar": 1,
+   "milk": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "poultice": 0,
+   "vinegar": 0,
+   "milk": 1
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 9,
+   "methanol": 9
+  },
+  "prep_mismatch": true
+ },
+ {
+  "genus": "Iris",
+  "category": "URO",
+  "priority": 6.15,
+  "ancient_prep": {
+   "decoction": 1,
+   "wine": 1,
+   "vinegar": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "decoction": 0,
+   "wine": 0,
+   "vinegar": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 0,
+   "methanol": 1
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Papaver",
+  "category": "DERM",
+  "priority": 5.58,
+  "ancient_prep": {
+   "poultice": 2,
+   "water": 1,
+   "decoction": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "poultice": 0,
+   "water": 7,
+   "decoction": 1
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 9,
+   "methanol": 9
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Iris",
+  "category": "GAST",
+  "priority": 5.58,
+  "ancient_prep": {
+   "wine": 2,
+   "vinegar": 2,
+   "decoction": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "wine": 0,
+   "vinegar": 0,
+   "decoction": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 0,
+   "methanol": 1
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Iris",
+  "category": "DERM",
+  "priority": 5.58,
+  "ancient_prep": {
+   "honey": 3,
+   "vinegar": 2,
+   "decoction": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "honey": 0,
+   "vinegar": 0,
+   "decoction": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 0,
+   "methanol": 1
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Anemone",
+  "category": "OPHT",
+  "priority": 5.27,
+  "ancient_prep": {
+   "decoction": 1,
+   "poultice": 1,
+   "juice": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "decoction": 2,
+   "poultice": 0,
+   "juice": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 15,
+   "methanol": 6
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Iris",
+  "category": "GYN",
+  "priority": 4.39,
+  "ancient_prep": {
+   "wine": 1,
+   "decoction": 1,
+   "honey": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "wine": 0,
+   "decoction": 0,
+   "honey": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 0,
+   "methanol": 1
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Corylus",
+  "category": "DERM",
+  "priority": 4.39,
+  "ancient_prep": {
+   "oil": 3,
+   "wine": 1,
+   "vinegar": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "oil": 1,
+   "wine": 0,
+   "vinegar": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 11,
+   "methanol": 14
+  },
+  "prep_mismatch": true
+ },
+ {
+  "genus": "Veratrum",
+  "category": "DERM",
+  "priority": 4.39,
+  "ancient_prep": {
+   "honey": 2,
+   "juice": 1,
+   "oil": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "honey": 0,
+   "juice": 0,
+   "oil": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 12,
+   "methanol": 2
+  },
+  "prep_mismatch": true
+ },
+ {
+  "genus": "Ruta",
+  "category": "DERM",
+  "priority": 3.97,
+  "ancient_prep": {
+   "honey": 3,
+   "vinegar": 2,
+   "wine": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "honey": 0,
+   "vinegar": 0,
+   "wine": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 6,
+   "methanol": 9
+  },
+  "prep_mismatch": true
+ },
+ {
+  "genus": "Papaver",
+  "category": "GAST",
+  "priority": 3.53,
+  "ancient_prep": {
+   "honey": 4,
+   "water": 3,
+   "vinegar": 3
+  },
+  "modern_studies_with_ancient_prep": {
+   "honey": 0,
+   "water": 7,
+   "vinegar": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 9,
+   "methanol": 9
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Origanum",
+  "category": "ANTI",
+  "priority": 3.51,
+  "ancient_prep": {
+   "wine": 1,
+   "vinegar": 1,
+   "honey": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "wine": 0,
+   "vinegar": 1,
+   "honey": 5
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 53,
+   "methanol": 36
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Heliotropium",
+  "category": "ANTI",
+  "priority": 3.51,
+  "ancient_prep": {
+   "wine": 1,
+   "poultice": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "wine": 0,
+   "poultice": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 10,
+   "methanol": 17
+  },
+  "prep_mismatch": true
+ },
+ {
+  "genus": "Ferula",
+  "category": "ANTI",
+  "priority": 3.51,
+  "ancient_prep": {
+   "oil": 3,
+   "vinegar": 1,
+   "decoction": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "oil": 0,
+   "vinegar": 0,
+   "decoction": 2
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 28,
+   "methanol": 42
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Sarcopoterium",
+  "category": "NERV",
+  "priority": 3.51,
+  "ancient_prep": {
+   "decoction": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "decoction": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 0,
+   "methanol": 0
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Cyclamen",
+  "category": "GYN",
+  "priority": 3.51,
+  "ancient_prep": {
+   "water": 1,
+   "wine": 1,
+   "decoction": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "water": 1,
+   "wine": 0,
+   "decoction": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 2,
+   "methanol": 4
+  },
+  "prep_mismatch": true
+ },
+ {
+  "genus": "Pistacia",
+  "category": "GYN",
+  "priority": 3.51,
+  "ancient_prep": {
+   "decoction": 1,
+   "milk": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "decoction": 2,
+   "milk": 9
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 36,
+   "methanol": 39
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Xanthium",
+  "category": "GYN",
+  "priority": 3.51,
+  "ancient_prep": {
+   "decoction": 1,
+   "milk": 1,
+   "juice": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "decoction": 0,
+   "milk": 0,
+   "juice": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 12,
+   "methanol": 19
+  },
+  "prep_mismatch": true
+ },
+ {
+  "genus": "Asphodelus",
+  "category": "ANTI",
+  "priority": 3.51,
+  "ancient_prep": {
+   "wine": 3
+  },
+  "modern_studies_with_ancient_prep": {
+   "wine": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 6,
+   "methanol": 5
+  },
+  "prep_mismatch": true
+ },
+ {
+  "genus": "Thapsia",
+  "category": "DERM",
+  "priority": 3.51,
+  "ancient_prep": {
+   "juice": 3,
+   "honey": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "juice": 0,
+   "honey": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 0,
+   "methanol": 1
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Raphanus",
+  "category": "DERM",
+  "priority": 3.29,
+  "ancient_prep": {
+   "honey": 3,
+   "decoction": 2,
+   "wine": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "honey": 6,
+   "decoction": 2,
+   "wine": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 19,
+   "methanol": 15
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Lilium",
+  "category": "DERM",
+  "priority": 3.09,
+  "ancient_prep": {
+   "vinegar": 3,
+   "honey": 2,
+   "decoction": 2
+  },
+  "modern_studies_with_ancient_prep": {
+   "vinegar": 0,
+   "honey": 1,
+   "decoction": 5
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 18,
+   "methanol": 6
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Myrtus",
+  "category": "URO",
+  "priority": 3.03,
+  "ancient_prep": {
+   "wine": 2,
+   "juice": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "wine": 1,
+   "juice": 3
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 24,
+   "methanol": 16
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Origanum",
+  "category": "GYN",
+  "priority": 3.03,
+  "ancient_prep": {
+   "honey": 2,
+   "vinegar": 1,
+   "milk": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "honey": 5,
+   "vinegar": 1,
+   "milk": 15
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 53,
+   "methanol": 36
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Xanthium",
+  "category": "DERM",
+  "priority": 2.98,
+  "ancient_prep": {
+   "poultice": 5,
+   "water": 1,
+   "wine": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "poultice": 0,
+   "water": 6,
+   "wine": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 12,
+   "methanol": 19
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Mandragora",
+  "category": "DERM",
+  "priority": 2.79,
+  "ancient_prep": {
+   "poultice": 1,
+   "vinegar": 1,
+   "water": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "poultice": 0,
+   "vinegar": 0,
+   "water": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 0,
+   "methanol": 0
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Hyssopus",
+  "category": "DERM",
+  "priority": 2.79,
+  "ancient_prep": {
+   "decoction": 3,
+   "honey": 2,
+   "vinegar": 2
+  },
+  "modern_studies_with_ancient_prep": {
+   "decoction": 0,
+   "honey": 0,
+   "vinegar": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 6,
+   "methanol": 8
+  },
+  "prep_mismatch": true
+ },
+ {
+  "genus": "Daucus",
+  "category": "GYN",
+  "priority": 2.63,
+  "ancient_prep": {},
+  "modern_studies_with_ancient_prep": {},
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 23,
+   "methanol": 12
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Daucus",
+  "category": "ANTI",
+  "priority": 2.63,
+  "ancient_prep": {
+   "wine": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "wine": 1
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 23,
+   "methanol": 12
+  },
+  "prep_mismatch": true
+ },
+ {
+  "genus": "Cressa",
+  "category": "DERM",
+  "priority": 2.63,
+  "ancient_prep": {
+   "milk": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "milk": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 1,
+   "methanol": 0
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Veratrum",
+  "category": "GYN",
+  "priority": 2.63,
+  "ancient_prep": {
+   "milk": 1,
+   "honey": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "milk": 1,
+   "honey": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 12,
+   "methanol": 2
+  },
+  "prep_mismatch": true
+ },
+ {
+  "genus": "Mercurialis",
+  "category": "GAST",
+  "priority": 2.63,
+  "ancient_prep": {
+   "water": 2
+  },
+  "modern_studies_with_ancient_prep": {
+   "water": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 0,
+   "methanol": 0
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Iris",
+  "category": "NERV",
+  "priority": 2.63,
+  "ancient_prep": {
+   "vinegar": 1,
+   "honey": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "vinegar": 0,
+   "honey": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 0,
+   "methanol": 1
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Vincetoxicum",
+  "category": "GYN",
+  "priority": 2.63,
+  "ancient_prep": {
+   "wine": 1,
+   "milk": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "wine": 0,
+   "milk": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 0,
+   "methanol": 3
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Inula",
+  "category": "ANTI",
+  "priority": 2.63,
+  "ancient_prep": {
+   "wine": 2,
+   "honey": 1,
+   "poultice": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "wine": 0,
+   "honey": 0,
+   "poultice": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 42,
+   "methanol": 36
+  },
+  "prep_mismatch": true
+ },
+ {
+  "genus": "Galium",
+  "category": "GYN",
+  "priority": 2.63,
+  "ancient_prep": {
+   "milk": 3
+  },
+  "modern_studies_with_ancient_prep": {
+   "milk": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 11,
+   "methanol": 7
+  },
+  "prep_mismatch": true
+ },
+ {
+  "genus": "Hyoscyamus",
+  "category": "GYN",
+  "priority": 2.63,
+  "ancient_prep": {
+   "juice": 1,
+   "honey": 1,
+   "wine": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "juice": 0,
+   "honey": 0,
+   "wine": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 3,
+   "methanol": 7
+  },
+  "prep_mismatch": true
+ },
+ {
+  "genus": "Hyoscyamus",
+  "category": "DERM",
+  "priority": 2.63,
+  "ancient_prep": {
+   "juice": 1,
+   "wine": 1,
+   "decoction": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "juice": 0,
+   "wine": 0,
+   "decoction": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 3,
+   "methanol": 7
+  },
+  "prep_mismatch": true
+ },
+ {
+  "genus": "Iris",
+  "category": "RESP",
+  "priority": 2.63,
+  "ancient_prep": {
+   "decoction": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "decoction": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 0,
+   "methanol": 1
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Asphodelus",
+  "category": "DERM",
+  "priority": 2.63,
+  "ancient_prep": {
+   "wine": 2,
+   "oil": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "wine": 0,
+   "oil": 1
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 6,
+   "methanol": 5
+  },
+  "prep_mismatch": true
+ },
+ {
+  "genus": "Cyclamen",
+  "category": "ANTI",
+  "priority": 2.63,
+  "ancient_prep": {
+   "wine": 2,
+   "poultice": 1,
+   "water": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "wine": 0,
+   "poultice": 0,
+   "water": 1
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 2,
+   "methanol": 4
+  },
+  "prep_mismatch": true
+ },
+ {
+  "genus": "Smyrnium",
+  "category": "URO",
+  "priority": 2.63,
+  "ancient_prep": {
+   "wine": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "wine": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 1,
+   "methanol": 0
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Calamintha",
+  "category": "ANTI",
+  "priority": 2.63,
+  "ancient_prep": {
+   "poultice": 1,
+   "wine": 1,
+   "honey": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "poultice": 0,
+   "wine": 0,
+   "honey": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 2,
+   "methanol": 3
+  },
+  "prep_mismatch": true
+ },
+ {
+  "genus": "Chondrilla",
+  "category": "DERM",
+  "priority": 2.63,
+  "ancient_prep": {
+   "honey": 1,
+   "juice": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "honey": 0,
+   "juice": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 0,
+   "methanol": 0
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Stachys",
+  "category": "ANTI",
+  "priority": 2.63,
+  "ancient_prep": {
+   "wine": 2,
+   "water": 1,
+   "poultice": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "wine": 2,
+   "water": 24,
+   "poultice": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 12,
+   "methanol": 38
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Apium",
+  "category": "ANTI",
+  "priority": 2.63,
+  "ancient_prep": {
+   "decoction": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "decoction": 2
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 30,
+   "methanol": 13
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Tordylium",
+  "category": "URO",
+  "priority": 2.63,
+  "ancient_prep": {
+   "juice": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "juice": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 0,
+   "methanol": 1
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Ferula",
+  "category": "DERM",
+  "priority": 2.56,
+  "ancient_prep": {
+   "vinegar": 3,
+   "honey": 3,
+   "wine": 2
+  },
+  "modern_studies_with_ancient_prep": {
+   "vinegar": 0,
+   "honey": 0,
+   "wine": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 28,
+   "methanol": 42
+  },
+  "prep_mismatch": true
+ },
+ {
+  "genus": "Lepidium",
+  "category": "DERM",
+  "priority": 2.48,
+  "ancient_prep": {
+   "honey": 1,
+   "poultice": 1,
+   "vinegar": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "honey": 2,
+   "poultice": 0,
+   "vinegar": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 27,
+   "methanol": 22
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Juniperus",
+  "category": "GYN",
+  "priority": 2.42,
+  "ancient_prep": {
+   "wine": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "wine": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 31,
+   "methanol": 34
+  },
+  "prep_mismatch": true
+ },
+ {
+  "genus": "Daucus",
+  "category": "URO",
+  "priority": 2.42,
+  "ancient_prep": {},
+  "modern_studies_with_ancient_prep": {},
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 23,
+   "methanol": 12
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Ruta",
+  "category": "GAST",
+  "priority": 2.42,
+  "ancient_prep": {
+   "decoction": 2,
+   "wine": 1,
+   "vinegar": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "decoction": 1,
+   "wine": 0,
+   "vinegar": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 6,
+   "methanol": 9
+  },
+  "prep_mismatch": true
+ },
+ {
+  "genus": "Artemisia",
+  "category": "ANTI",
+  "priority": 2.2,
+  "ancient_prep": {
+   "wine": 3,
+   "vinegar": 1,
+   "water": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "wine": 7,
+   "vinegar": 7,
+   "water": 253
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 247,
+   "methanol": 159
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Daphne",
+  "category": "DERM",
+  "priority": 2.2,
+  "ancient_prep": {
+   "honey": 2,
+   "water": 1,
+   "oil": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "honey": 0,
+   "water": 8,
+   "oil": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 17,
+   "methanol": 34
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Papaver",
+  "category": "NERV",
+  "priority": 2.2,
+  "ancient_prep": {
+   "decoction": 2,
+   "water": 2,
+   "poultice": 2
+  },
+  "modern_studies_with_ancient_prep": {
+   "decoction": 1,
+   "water": 7,
+   "poultice": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 9,
+   "methanol": 9
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Anthemis",
+  "category": "URO",
+  "priority": 2.09,
+  "ancient_prep": {
+   "decoction": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "decoction": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 4,
+   "methanol": 8
+  },
+  "prep_mismatch": true
+ },
+ {
+  "genus": "Vicia",
+  "category": "GYN",
+  "priority": 2.09,
+  "ancient_prep": {
+   "vinegar": 2,
+   "decoction": 1,
+   "milk": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "vinegar": 3,
+   "decoction": 0,
+   "milk": 10
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 25,
+   "methanol": 18
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Sedum",
+  "category": "OPHT",
+  "priority": 2.09,
+  "ancient_prep": {
+   "poultice": 1,
+   "juice": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "poultice": 0,
+   "juice": 9
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 19,
+   "methanol": 12
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Asplenium",
+  "category": "DERM",
+  "priority": 2.09,
+  "ancient_prep": {},
+  "modern_studies_with_ancient_prep": {},
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 0,
+   "methanol": 5
+  },
+  "prep_mismatch": false
+ },
+ {
+  "genus": "Lilium",
+  "category": "GYN",
+  "priority": 2.09,
+  "ancient_prep": {
+   "decoction": 1,
+   "poultice": 1
+  },
+  "modern_studies_with_ancient_prep": {
+   "decoction": 5,
+   "poultice": 0
+  },
+  "modern_studies_ethanol_methanol": {
+   "ethanol": 18,
+   "methanol": 6
+  },
+  "prep_mismatch": false
+ }
+]

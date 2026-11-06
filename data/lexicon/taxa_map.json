@@ -71,12 +71,6 @@
 "confidence": "medium",
 "headword": "ἀγάλοχον"
 },
-"I_26": {
-"genus": "Crocus",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "κρόκος"
-},
 "I_28": {
 "genus": "Inula",
 "source": "LSJ",
@@ -94,12 +88,6 @@
 "source": "LSJ",
 "confidence": "medium",
 "headword": "στύραξ"
-},
-"I_68": {
-"genus": "Boswellia",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "λίβανος·"
 },
 "I_69": {
 "genus": "Pinus",
@@ -119,12 +107,6 @@
 "confidence": "medium",
 "headword": "τέρμινθος"
 },
-"I_74": {
-"genus": "Cupressus",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "κυπάρισσος"
-},
 "I_75": {
 "genus": "Juniperus",
 "source": "LSJ",
@@ -143,23 +125,11 @@
 "confidence": "medium",
 "headword": "κέδρος"
 },
-"I_78": {
-"genus": "Laurus",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "δάφνη·"
-},
 "I_80": {
 "genus": "Fraxinus",
 "source": "LSJ",
 "confidence": "medium",
 "headword": "μελία"
-},
-"I_86": {
-"genus": "Cyperus",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "πάπυρος"
 },
 "I_87": {
 "genus": "Tamarix",
@@ -221,29 +191,11 @@
 "confidence": "medium",
 "headword": "ἰτέα"
 },
-"I_106": {
-"genus": "Quercus",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "δρῦς"
-},
 "I_108": {
 "genus": "Rhus",
 "source": "LSJ",
 "confidence": "medium",
 "headword": "ῥοῦς"
-},
-"I_109": {
-"genus": "Phoenix",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "φοῖνιξ"
-},
-"I_110": {
-"genus": "Punica",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "ῥόα"
 },
 "I_112": {
 "genus": "Myrtus",
@@ -281,53 +233,11 @@
 "confidence": "medium",
 "headword": "μορέα"
 },
-"II_93": {
-"genus": "Valeriana",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "τράγος"
-},
 "II_94": {
 "genus": "Avena",
 "source": "LSJ",
 "confidence": "medium",
 "headword": "βρόμος"
-},
-"II_95": {
-"genus": "Oryza",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "ὄρυζα"
-},
-"II_97": {
-"genus": "Panicum",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "κέγχρος"
-},
-"II_104": {
-"genus": "Cicer",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "ἐρέβινθος"
-},
-"II_105": {
-"genus": "Vicia",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "κύαμος"
-},
-"II_107": {
-"genus": "Lens",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "φακὸς"
-},
-"II_108": {
-"genus": "Vicia",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "ὄροβός"
 },
 "II_109": {
 "genus": "Lupinus",
@@ -358,24 +268,6 @@
 "source": "LSJ",
 "confidence": "medium",
 "headword": "λάπαθον"
-},
-"II_115": {
-"genus": "Rumex",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "ἱππολάπαθον"
-},
-"II_117": {
-"genus": "Amaranthus",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "βλίτον"
-},
-"II_120": {
-"genus": "Brassica",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "κράμβη"
 },
 "II_121": {
 "genus": "Brassica",
@@ -461,12 +353,6 @@
 "confidence": "medium",
 "headword": "ἀφάκη"
 },
-"II_150": {
-"genus": "Allium",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "ἀμπελόπρασον"
-},
 "II_155": {
 "genus": "Lepidium",
 "source": "LSJ",
@@ -532,12 +418,6 @@
 "source": "LSJ",
 "confidence": "medium",
 "headword": "ἀσφόδελος·"
-},
-"II_170": {
-"genus": "Narcissus",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "βολβὸς"
 },
 "II_172": {
 "genus": "Pancratium",
@@ -887,12 +767,6 @@
 "source": "manual",
 "confidence": "medium",
 "headword": "τόρδιλον·"
-},
-"III_55": {
-"genus": "Sison",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "σίνων·"
 },
 "III_56": {
 "genus": "Pimpinella",
@@ -1681,12 +1555,6 @@
 "confidence": "medium",
 "headword": "ἑλξίνη"
 },
-"IV_87": {
-"genus": "Lens",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "φακὸς"
-},
 "IV_88": {
 "genus": "Sedum",
 "source": "LSJ",
@@ -1770,12 +1638,6 @@
 "source": "LSJ",
 "confidence": "medium",
 "headword": "καπνὸς"
-},
-"IV_110": {
-"genus": "Trifolium",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "λωτὸς"
 },
 "IV_111": {
 "genus": "Trifolium",
@@ -1890,12 +1752,6 @@
 "source": "LSJ",
 "confidence": "medium",
 "headword": "πολύγαλον"
-},
-"IV_140": {
-"genus": "Osyris",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "ὄσιρις"
 },
 "IV_144": {
 "genus": "Myrtus",
@@ -2100,11 +1956,5 @@
 "source": "LSJ",
 "confidence": "medium",
 "headword": "ἄμπελος"
-},
-"V_79": {
-"genus": "Viola",
-"source": "LSJ",
-"confidence": "medium",
-"headword": "ἰὸν"
 }
 }

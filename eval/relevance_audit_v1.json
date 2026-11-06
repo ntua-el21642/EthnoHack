@@ -1,0 +1,5 @@
+{"date":"2026-11-06","query":"TITLE_ABS plant AND TITLE_ABS indication terms (v1)","pairs":30,"papers_judged":85,
+ "R_relevant_to_traditional_use":36,"P_plant_relevant_other_context":28,"X_irrelevant":21,
+ "pairs_with_at_least_one_R_in_top3":19,
+ "judge":"Claude (reading titles and abstract openings); not independent of the author - needs a human spot check",
+ "failure_modes":["genus name matches species epithet (Ammi -> Trachyspermum ammi)","over-general indication terms (eye, oral, ear, skin, kidney)","plant named only as an example (rutin/Ruta), pollen allergens (Artemisia), feed additives, cancer/nanoparticle papers"]}

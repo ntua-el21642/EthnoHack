@@ -1,0 +1,5 @@
+{"date":"2026-11-06","query":"strict + TITLE_ABS exclusions (cattle, fish, germination, pollen...) + homonym search terms + narrower indication terms","seed":11,"pairs":30,"papers_judged":74,
+ "R_relevant_to_traditional_use":40,"P_plant_relevant_other_context":22,"X_irrelevant":12,
+ "pairs_with_at_least_one_R_in_top3":24,
+ "note":"sample drawn from the rebuilt table, so not the same pairs as v1/v2; judge is Claude, not independent; needs a human spot check",
+ "history":{"v1_loose":{"R":"42%","X":"25%"},"v2_strict":{"R":"40%","X":"33%"},"v3":{"R":"54%","X":"16%"}}}
