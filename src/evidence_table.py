@@ -21,6 +21,7 @@ CAT_TERMS = {
 SAFETY = ["toxicity","poisoning","hepatotoxicity","nephrotoxic","carcinogenic","adverse effects"]
 MIN_ANCIENT = 2
 
+TERMS = json.load(open("data/lexicon/search_terms.json", encoding="utf-8"))
 ext = {e["chapter"]: e for e in json.load(open("data/extractions/rules_all.json"))}
 tax = json.load(open("data/lexicon/book3_taxa.json"))
 by = collections.defaultdict(list)
@@ -33,9 +34,10 @@ for gen in sorted(by):
         for u in ext.get(ch, {"uses": []})["uses"]:
             spans[u["cat"]].append((ch, u["mode"], u["span"]))
     cats = [c for c in spans if c in CAT_TERMS and len(spans[c]) >= MIN_ANCIENT]
-    safety = ep.counts([gen], SAFETY)
+    pt = TERMS.get(gen, [gen])
+    safety = ep.counts(pt, SAFETY)
     for c in cats:
-        m = ep.counts([gen], CAT_TERMS[c])
+        m = ep.counts(pt, CAT_TERMS[c])
         rows.append({"genus": gen, "category": c, "ancient_statements": len(spans[c]),
                      "chapters": ";".join(sorted({s[0] for s in spans[c]})),
                      "modes": ";".join(sorted({s[1] for s in spans[c]})),
