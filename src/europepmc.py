@@ -16,12 +16,18 @@ def _get(params):
     fp = os.path.join(CACHE, key + ".json")
     if os.path.exists(fp):
         return json.load(open(fp))
-    for attempt in range(4):
-        r = requests.get(BASE, params=params, timeout=30)
-        if r.status_code == 200:
-            data = r.json(); json.dump(data, open(fp, "w")); time.sleep(0.15); return data
-        time.sleep(1 + attempt)
-    r.raise_for_status()
+    last = None
+    for attempt in range(6):
+        try:
+            r = requests.get(BASE, params=params, timeout=30)
+            if r.status_code == 200:
+                data = r.json(); json.dump(data, open(fp, "w")); time.sleep(0.15); return data
+            last = r
+        except requests.RequestException as ex:  # proxy hiccups: back off and retry
+            last = ex
+        time.sleep(2 * (attempt + 1))
+    if isinstance(last, Exception): raise last
+    last.raise_for_status()
 
 
 def build_query(plant_terms, indication_terms):
