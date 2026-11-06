@@ -1,0 +1,2110 @@
+{
+"I_1": {
+"genus": "Iris",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἶρις"
+},
+"I_2": {
+"genus": "Iris",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἄκορον"
+},
+"I_3": {
+"genus": "Meum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "μῆον"
+},
+"I_4": {
+"genus": "Cyperus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κύπερος"
+},
+"I_6": {
+"genus": "Elettaria",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "καρδάμωμον"
+},
+"I_10": {
+"genus": "Asarum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἄσαρον"
+},
+"I_12": {
+"genus": "Cinnamomum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "μαλάβαθρον"
+},
+"I_15": {
+"genus": "Amomum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἄμωμόν"
+},
+"I_17": {
+"genus": "Cymbopogon",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "σχοῖνος·"
+},
+"I_18": {
+"genus": "Acorus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κάλαμος"
+},
+"I_21": {
+"genus": "Lactuca",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "βρύον"
+},
+"I_22": {
+"genus": "Aquilaria",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἀγάλοχον"
+},
+"I_26": {
+"genus": "Crocus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κρόκος"
+},
+"I_28": {
+"genus": "Inula",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "Ἑλένιον·"
+},
+"I_29": {
+"genus": "Inula",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "Ἑλένιον"
+},
+"I_66": {
+"genus": "Styrax",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "στύραξ"
+},
+"I_68": {
+"genus": "Boswellia",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "λίβανος·"
+},
+"I_69": {
+"genus": "Pinus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "πίτυς"
+},
+"I_70": {
+"genus": "Pistacia",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "σχῖνος"
+},
+"I_71": {
+"genus": "Pistacia",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "τέρμινθος"
+},
+"I_74": {
+"genus": "Cupressus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κυπάρισσος"
+},
+"I_75": {
+"genus": "Juniperus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἄρκευθος·"
+},
+"I_76": {
+"genus": "Juniperus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "βράθυ"
+},
+"I_77": {
+"genus": "Juniperus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κέδρος"
+},
+"I_78": {
+"genus": "Laurus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "δάφνη·"
+},
+"I_80": {
+"genus": "Fraxinus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "μελία"
+},
+"I_86": {
+"genus": "Cyperus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "πάπυρος"
+},
+"I_87": {
+"genus": "Tamarix",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "μυρίκη"
+},
+"I_88": {
+"genus": "Erica",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἐρείκη"
+},
+"I_90": {
+"genus": "Rhamnus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ῥάμνος"
+},
+"I_92": {
+"genus": "Paliurus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "παλίουρος"
+},
+"I_94": {
+"genus": "Rosa",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κυνόσβατος·"
+},
+"I_95": {
+"genus": "Lawsonia",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κύπρος"
+},
+"I_97": {
+"genus": "Cistus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κίσθος"
+},
+"I_101": {
+"genus": "Acacia",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἀκακία"
+},
+"I_103": {
+"genus": "Vitex",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἄγνος"
+},
+"I_104": {
+"genus": "Salix",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἰτέα"
+},
+"I_106": {
+"genus": "Quercus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "δρῦς"
+},
+"I_108": {
+"genus": "Rhus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ῥοῦς"
+},
+"I_109": {
+"genus": "Phoenix",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "φοῖνιξ"
+},
+"I_110": {
+"genus": "Punica",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ῥόα"
+},
+"I_112": {
+"genus": "Myrtus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "μυρσίνη"
+},
+"I_117": {
+"genus": "Trifolium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "λωτὸς"
+},
+"I_118": {
+"genus": "Crataegus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "μέσπιλον"
+},
+"I_121": {
+"genus": "Prunus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κοκκυμηλέα"
+},
+"I_125": {
+"genus": "Corylus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κάρυα"
+},
+"I_126": {
+"genus": "Morus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "μορέα"
+},
+"II_93": {
+"genus": "Valeriana",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "τράγος"
+},
+"II_94": {
+"genus": "Avena",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "βρόμος"
+},
+"II_95": {
+"genus": "Oryza",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ὄρυζα"
+},
+"II_97": {
+"genus": "Panicum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κέγχρος"
+},
+"II_104": {
+"genus": "Cicer",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἐρέβινθος"
+},
+"II_105": {
+"genus": "Vicia",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κύαμος"
+},
+"II_107": {
+"genus": "Lens",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "φακὸς"
+},
+"II_108": {
+"genus": "Vicia",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ὄροβός"
+},
+"II_109": {
+"genus": "Lupinus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "θέρμος"
+},
+"II_111": {
+"genus": "Brassica",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "βουνιάς"
+},
+"II_112": {
+"genus": "Raphanus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ῥαφανὶς"
+},
+"II_113": {
+"genus": "Pastinaca",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "σίσαρον"
+},
+"II_114": {
+"genus": "Rumex",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "λάπαθον"
+},
+"II_115": {
+"genus": "Rumex",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἱππολάπαθον"
+},
+"II_117": {
+"genus": "Amaranthus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "βλίτον"
+},
+"II_120": {
+"genus": "Brassica",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κράμβη"
+},
+"II_121": {
+"genus": "Brassica",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κράμβη"
+},
+"II_126": {
+"genus": "Plantago",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἀρνόγλωσσον"
+},
+"II_127": {
+"genus": "Sium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "σίον"
+},
+"II_128": {
+"genus": "Mentha",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "σισύμβριον·"
+},
+"II_129": {
+"genus": "Crithmum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κρῆθμον"
+},
+"II_130": {
+"genus": "Plantago",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κορωνόποὗς"
+},
+"II_132": {
+"genus": "Cichorium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "σέρις"
+},
+"II_133": {
+"genus": "Chondrilla",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "χονδρίλη"
+},
+"II_137": {
+"genus": "Daucus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "γιγγίδιον·"
+},
+"II_139": {
+"genus": "Tordylium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "καυκαλίς"
+},
+"II_140": {
+"genus": "Eruca",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "εὔζωμον"
+},
+"II_141": {
+"genus": "Ocimum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ὤκιμον"
+},
+"II_146": {
+"genus": "Quercus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "σμῖλαξ"
+},
+"II_148": {
+"genus": "Vicia",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἀφάκη"
+},
+"II_150": {
+"genus": "Allium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἀμπελόπρασον"
+},
+"II_155": {
+"genus": "Lepidium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κάρδαμον"
+},
+"II_157": {
+"genus": "Lepidium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "δράβη"
+},
+"II_158": {
+"genus": "Sisymbrium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἐρύσιμον·"
+},
+"II_159": {
+"genus": "Piper",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "πέπερι"
+},
+"II_162": {
+"genus": "Achillea",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "πταρμικὴ"
+},
+"II_164": {
+"genus": "Cyclamen",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κυκλάμινος·"
+},
+"II_165": {
+"genus": "Cyclamen",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κυκλάμινος"
+},
+"II_166": {
+"genus": "Dracunculus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "δρακόντιον·"
+},
+"II_167": {
+"genus": "Arum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἄρον"
+},
+"II_168": {
+"genus": "Arisarum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἀρίσαρόν"
+},
+"II_169": {
+"genus": "Asphodelus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἀσφόδελος·"
+},
+"II_170": {
+"genus": "Narcissus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "βολβὸς"
+},
+"II_172": {
+"genus": "Pancratium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "παγκράτιον·"
+},
+"II_173": {
+"genus": "Capparis",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κάππαρις·"
+},
+"II_174": {
+"genus": "Lepidium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "λεπίδιον"
+},
+"II_175": {
+"genus": "Ranunculus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "βατράχιον·"
+},
+"II_176": {
+"genus": "Anemone",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἀνεμώνη"
+},
+"II_177": {
+"genus": "Papaver",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἀργεμώνη·"
+},
+"II_178": {
+"genus": "Anagallis",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἀναγαλλίς"
+},
+"II_179": {
+"genus": "Hedera",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κισσὸς"
+},
+"II_180": {
+"genus": "Chelidonium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "χελιδόνιον"
+},
+"II_181": {
+"genus": "Chelidonium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "χελιδόνιον"
+},
+"II_182": {
+"genus": "Chelidonium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ὀθόννα·"
+},
+"II_184": {
+"genus": "Isatis",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἰσάτις"
+},
+"II_185": {
+"genus": "Isatis",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἰσάτις"
+},
+"III_2": {
+"genus": "Rheum",
+"source": "manual",
+"confidence": "medium",
+"headword": "ῥᾶ·"
+},
+"III_3": {
+"genus": "Gentiana",
+"source": "manual",
+"confidence": "medium",
+"headword": "γεντιανή·"
+},
+"III_4": {
+"genus": "Aristolochia",
+"lsj": "Aristolochia",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "ἀριστολοχεία·"
+},
+"III_5": {
+"genus": "Glycyrrhiza",
+"lsj": "Glycyrrhiza",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "γλυκύρριζα"
+},
+"III_6": {
+"genus": "Centaurea",
+"lsj": "Centaurea",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "κενταύρειον"
+},
+"III_7": {
+"genus": "Centaurium",
+"lsj": "Centaurea",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "κενταύρειον"
+},
+"III_8": {
+"genus": "Carlina",
+"lsj": "Cardopatium",
+"source": "manual+LSJ",
+"confidence": "review",
+"headword": "χαμαιλέων"
+},
+"III_11": {
+"genus": "Dipsacus",
+"lsj": "Dipsacus",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "δίψακος"
+},
+"III_12": {
+"genus": "Eryngium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἄκανθα"
+},
+"III_13": {
+"genus": "Eryngium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἄκανθα"
+},
+"III_14": {
+"genus": "Scolymus",
+"source": "manual",
+"confidence": "medium",
+"headword": "σκόλυμος·"
+},
+"III_15": {
+"genus": "Sarcopoterium",
+"source": "manual",
+"confidence": "medium",
+"headword": "ποτίρριον·"
+},
+"III_16": {
+"genus": "Onopordum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἀκάνθιον·"
+},
+"III_17": {
+"genus": "Acanthus",
+"lsj": "Acanthus",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "ἄκανθος·"
+},
+"III_18": {
+"genus": "Ononis",
+"source": "manual",
+"confidence": "medium",
+"headword": "ἀνωνίς·"
+},
+"III_20": {
+"genus": "Astragalus",
+"source": "manual",
+"confidence": "medium",
+"headword": "τραγάκανθα"
+},
+"III_21": {
+"genus": "Eryngium",
+"source": "manual",
+"confidence": "medium",
+"headword": "ἡρύγγη"
+},
+"III_22": {
+"genus": "Aloe",
+"lsj": "Aloe",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "ἀλόη·"
+},
+"III_23": {
+"genus": "Artemisia",
+"lsj": "Artemisia",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "ἀψίνθιον·"
+},
+"III_24": {
+"genus": "Artemisia",
+"lsj": "Artemisia",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "ἁβρότονον·"
+},
+"III_25": {
+"genus": "Hyssopus",
+"lsj": "Origanum",
+"source": "manual+LSJ",
+"confidence": "review",
+"headword": "ὔσσωπος·"
+},
+"III_26": {
+"genus": "Lavandula",
+"lsj": "Lavandula",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "στοιχάς·"
+},
+"III_27": {
+"genus": "Origanum",
+"source": "manual",
+"confidence": "medium",
+"headword": "ὀρίγανος"
+},
+"III_30": {
+"genus": "Thymus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "τραγορίγανος·"
+},
+"III_31": {
+"genus": "Mentha",
+"source": "manual",
+"confidence": "medium",
+"headword": "γλήχων·"
+},
+"III_32": {
+"genus": "Origanum",
+"lsj": "Origanum",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "δίκταμνον"
+},
+"III_33": {
+"genus": "Salvia",
+"source": "manual",
+"confidence": "medium",
+"headword": "ἐλελίσφακον·"
+},
+"III_34": {
+"genus": "Mentha",
+"source": "manual",
+"confidence": "medium",
+"headword": "ἡδύοσμον"
+},
+"III_35": {
+"genus": "Calamintha",
+"source": "manual",
+"confidence": "medium",
+"headword": "καλαμίνθη·"
+},
+"III_36": {
+"genus": "Thymus",
+"source": "manual",
+"confidence": "medium",
+"headword": "θύμος·"
+},
+"III_37": {
+"genus": "Satureja",
+"lsj": "Thymbra",
+"source": "manual+LSJ",
+"confidence": "review",
+"headword": "θύμβρα·"
+},
+"III_38": {
+"genus": "Thymus",
+"lsj": "Thymus",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "ἔρπυλλος"
+},
+"III_39": {
+"genus": "Origanum",
+"lsj": "Origanum",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "σάμψουχον"
+},
+"III_40": {
+"genus": "Melilotus",
+"source": "manual",
+"confidence": "medium",
+"headword": "μελίλωτος·"
+},
+"III_41": {
+"genus": "Mentha",
+"lsj": "Mentha",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "σισύμβριον"
+},
+"III_42": {
+"genus": "Teucrium",
+"lsj": "Teucrium",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "μᾶρον"
+},
+"III_44": {
+"genus": "Cyclamen",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "βάκχαρις·"
+},
+"III_45": {
+"genus": "Ruta",
+"lsj": "Ruta",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "πήγανον·"
+},
+"III_51": {
+"genus": "Levisticum",
+"source": "manual",
+"confidence": "medium",
+"headword": "λιγυστικόν·"
+},
+"III_52": {
+"genus": "Daucus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "σταφυλῖνος"
+},
+"III_53": {
+"genus": "Seseli",
+"source": "manual",
+"confidence": "medium",
+"headword": "σέσελι"
+},
+"III_54": {
+"genus": "Tordylium",
+"source": "manual",
+"confidence": "medium",
+"headword": "τόρδιλον·"
+},
+"III_55": {
+"genus": "Sison",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "σίνων·"
+},
+"III_56": {
+"genus": "Pimpinella",
+"source": "manual",
+"confidence": "medium",
+"headword": "ἄνσσον·"
+},
+"III_57": {
+"genus": "Carum",
+"source": "manual",
+"confidence": "medium",
+"headword": "καρώ·"
+},
+"III_58": {
+"genus": "Anethum",
+"source": "manual",
+"confidence": "medium",
+"headword": "ἀνήθου"
+},
+"III_59": {
+"genus": "Cuminum",
+"lsj": "Cuminum",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "κύμινον"
+},
+"III_60": {
+"genus": "Cuminum",
+"lsj": "Cuminum",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "κύμινον"
+},
+"III_62": {
+"genus": "Ammi",
+"lsj": "Carum",
+"source": "manual+LSJ",
+"confidence": "review",
+"headword": "ἄμι·"
+},
+"III_63": {
+"genus": "Coriandrum",
+"source": "manual",
+"confidence": "medium",
+"headword": "κόριον·"
+},
+"III_64": {
+"genus": "Apium",
+"lsj": "Apium",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "σέλινον"
+},
+"III_65": {
+"genus": "Athamanta",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ὀρεοσέλινον"
+},
+"III_66": {
+"genus": "Petroselinum",
+"lsj": "Petroselinum",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "πετροσέλινον·"
+},
+"III_67": {
+"genus": "Smyrnium",
+"lsj": "Smyrnium",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "ἱπποσέλινον·"
+},
+"III_68": {
+"genus": "Smyrnium",
+"lsj": "Smyrnium",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "σμύρνιον"
+},
+"III_69": {
+"genus": "Pastinaca",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἐλαφοβόσκον"
+},
+"III_70": {
+"genus": "Foeniculum",
+"lsj": "Foeniculum",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "μάραθον·"
+},
+"III_72": {
+"genus": "Daucus",
+"lsj": "Athamanta",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "δαῦκος·"
+},
+"III_74": {
+"genus": "Rosmarinus",
+"lsj": "Lactuca",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "λιβανωτίς·"
+},
+"III_75": {
+"genus": "Rosmarinus",
+"lsj": "Lactuca",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "λιβανωτίς"
+},
+"III_76": {
+"genus": "Heracleum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "σφονδύλιον·"
+},
+"III_77": {
+"genus": "Ferula",
+"source": "manual",
+"confidence": "medium",
+"headword": "νάρθηκος"
+},
+"III_78": {
+"genus": "Peucedanum",
+"source": "manual",
+"confidence": "medium",
+"headword": "πευκέκδανον·"
+},
+"III_79": {
+"genus": "Nigella",
+"lsj": "Nigella",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "μελάνθιον·"
+},
+"III_80": {
+"genus": "Ferula",
+"lsj": "Ferula",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "σίλφιον·"
+},
+"III_81": {
+"genus": "Ferula",
+"lsj": "Ferula",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "σαγαπηνόν·"
+},
+"III_82": {
+"genus": "Euphorbia",
+"lsj": "Euphorbia",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "εὐφόρβιον·"
+},
+"III_83": {
+"genus": "Ferula",
+"lsj": "Ferula",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "χαλβάνη·"
+},
+"III_86": {
+"genus": "Glaucium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "γλαύκιον·"
+},
+"III_89": {
+"genus": "Viscum",
+"source": "manual",
+"confidence": "medium",
+"headword": "ἰξός·"
+},
+"III_90": {
+"genus": "Galium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἀπαρίνη·"
+},
+"III_92": {
+"genus": "Vincetoxicum",
+"lsj": "Vincetoxicum",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "ἀσκληπιάς·"
+},
+"III_93": {
+"genus": "Carthamus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἀτρακτυλίς·"
+},
+"III_95": {
+"genus": "Clinopodium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κλινοπόδιον·"
+},
+"III_100": {
+"genus": "Lychnis",
+"lsj": "Agrostemma",
+"source": "manual+LSJ",
+"confidence": "review",
+"headword": "λυχνὶς"
+},
+"III_101": {
+"genus": "Lychnis",
+"lsj": "Agrostemma",
+"source": "manual+LSJ",
+"confidence": "review",
+"headword": "λυχνὶς"
+},
+"III_102": {
+"genus": "Lilium",
+"lsj": "Lilium",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "κρίνον"
+},
+"III_103": {
+"genus": "Ballota",
+"source": "manual",
+"confidence": "medium",
+"headword": "βαλλντή·"
+},
+"III_104": {
+"genus": "Melissa",
+"source": "manual",
+"confidence": "medium",
+"headword": "μελισσόφυλλον"
+},
+"III_105": {
+"genus": "Marrubium",
+"lsj": "Marrubium",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "πράσιον"
+},
+"III_109": {
+"genus": "Trifolium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "τρίφυλλον·"
+},
+"III_110": {
+"genus": "Teucrium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "πόλιον·"
+},
+"III_111": {
+"genus": "Teucrium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "σκόρδιον·"
+},
+"III_112": {
+"genus": "Tussilago",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "βήχιον·"
+},
+"III_113": {
+"genus": "Artemisia",
+"lsj": "Artemisia",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "ἀρτεμισία·"
+},
+"III_114": {
+"genus": "Ambrosia",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἀμβροσία"
+},
+"III_116": {
+"genus": "Geranium",
+"lsj": "Geranium",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "γεράνιον·"
+},
+"III_118": {
+"genus": "Typha",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "τύφη·"
+},
+"III_119": {
+"genus": "Vincetoxicum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κιρκαία·"
+},
+"III_120": {
+"genus": "Vitis",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "οἰνάνθη"
+},
+"III_121": {
+"genus": "Inula",
+"lsj": "Inula",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "κόνυζα·"
+},
+"III_122": {
+"genus": "Lilium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἡμεροκαλλές"
+},
+"III_123": {
+"genus": "Matthiola",
+"lsj": "Matthiola",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "λευκόϊον"
+},
+"III_124": {
+"genus": "Polygonum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κραταιόγονον·"
+},
+"III_125": {
+"genus": "Mercurialis",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "φύλλον"
+},
+"III_126": {
+"genus": "Orchis",
+"source": "manual",
+"confidence": "medium",
+"headword": "ὄρχις·"
+},
+"III_127": {
+"genus": "Orchis",
+"source": "manual",
+"confidence": "medium",
+"headword": "ὄρχις"
+},
+"III_128": {
+"genus": "Orchis",
+"source": "manual",
+"confidence": "medium",
+"headword": "σατύριον·"
+},
+"III_129": {
+"genus": "Salvia",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ὅρμινον·"
+},
+"III_132": {
+"genus": "Nymphaea",
+"lsj": "Nuphar",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "νυμφαία·"
+},
+"III_135": {
+"genus": "Asplenium",
+"source": "manual",
+"confidence": "medium",
+"headword": "ἡμιονῖτις"
+},
+"III_136": {
+"genus": "Cressa",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἀνθυλλίς·"
+},
+"III_137": {
+"genus": "Anthemis",
+"lsj": "Matricaria",
+"source": "manual+LSJ",
+"confidence": "review",
+"headword": "ἀνθεμίς·"
+},
+"III_139": {
+"genus": "Anacyclus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "βούφθαλμον"
+},
+"III_140": {
+"genus": "Paeonia",
+"lsj": "Paeonia",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "γλυκυσίδη·"
+},
+"III_141": {
+"genus": "Lithospermum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "λιθόσπερμον·"
+},
+"III_143": {
+"genus": "Rubia",
+"source": "manual",
+"confidence": "medium",
+"headword": "ἐρυθρόδανον"
+},
+"III_146": {
+"genus": "Althaea",
+"source": "manual",
+"confidence": "medium",
+"headword": "ἀολθαία"
+},
+"III_148": {
+"genus": "Cannabis",
+"lsj": "Cannabis",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "κάνναβις·"
+},
+"III_150": {
+"genus": "Anagyris",
+"lsj": "Anagyris",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "ἀνάγυρος·"
+},
+"III_152": {
+"genus": "Alisma",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἄλισμα·"
+},
+"III_154": {
+"genus": "Hypericum",
+"source": "manual",
+"confidence": "medium",
+"headword": "ὑπερικόν·"
+},
+"III_155": {
+"genus": "Hypericum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἄσκυρον·"
+},
+"III_156": {
+"genus": "Hypericum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἀνδρόσαιμον·"
+},
+"III_157": {
+"genus": "Hypericum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κόρις·"
+},
+"III_158": {
+"genus": "Ajuga",
+"lsj": "Ajuga",
+"source": "manual+LSJ",
+"confidence": "high",
+"headword": "χαμαίπιτυς"
+},
+"IV_1": {
+"genus": "Stachys",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κέστρον"
+},
+"IV_3": {
+"genus": "Lysimachia",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "Λυσιμάχειος·"
+},
+"IV_4": {
+"genus": "Hippuris",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "πολύγονον"
+},
+"IV_5": {
+"genus": "Hippuris",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "πολύγονον"
+},
+"IV_7": {
+"genus": "Vinca",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κληματίς·"
+},
+"IV_8": {
+"genus": "Hypericum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "Πολεμώνιον·"
+},
+"IV_9": {
+"genus": "Symphytum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "σύμφυτον"
+},
+"IV_10": {
+"genus": "Symphytum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "σύμφυτον"
+},
+"IV_11": {
+"genus": "Plantago",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ὁλόστεον·"
+},
+"IV_13": {
+"genus": "Convolvulus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κλύμενον"
+},
+"IV_14": {
+"genus": "Lonicera",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "περικλύμενον·"
+},
+"IV_15": {
+"genus": "Trapa",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "τρίβολος"
+},
+"IV_20": {
+"genus": "Gladiolus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ξιφίον"
+},
+"IV_21": {
+"genus": "Sparganium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "σπαργάνιον"
+},
+"IV_22": {
+"genus": "Iris",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ξυρίς"
+},
+"IV_23": {
+"genus": "Anchusa",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἄγχουσα·"
+},
+"IV_24": {
+"genus": "Anchusa",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἄγχουσα"
+},
+"IV_26": {
+"genus": "Echium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "λυκαψός·"
+},
+"IV_27": {
+"genus": "Echium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἔχιον·"
+},
+"IV_29": {
+"genus": "Cynodon",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἄγρωστις·"
+},
+"IV_37": {
+"genus": "Rubus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "βάτος"
+},
+"IV_38": {
+"genus": "Rubus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "βάτος"
+},
+"IV_39": {
+"genus": "Parietaria",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἑλξίνη"
+},
+"IV_43": {
+"genus": "Phoenix",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "φοῖνιξ·"
+},
+"IV_46": {
+"genus": "Equisetum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἵππουρις·"
+},
+"IV_48": {
+"genus": "Quercus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κόκκος"
+},
+"IV_49": {
+"genus": "Hypericum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "τρὰγιον·"
+},
+"IV_50": {
+"genus": "Hypericum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "τράγιον"
+},
+"IV_51": {
+"genus": "Valeriana",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "τράγος·"
+},
+"IV_55": {
+"genus": "Helichrysum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "χρυσοκόμη"
+},
+"IV_56": {
+"genus": "Bongardia",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "χρυσόγονον·"
+},
+"IV_58": {
+"genus": "Origanum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἀγήρατον"
+},
+"IV_59": {
+"genus": "Verbena",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "περιστέριον·"
+},
+"IV_62": {
+"genus": "Hyacinthus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ὑάκινθος·"
+},
+"IV_63": {
+"genus": "Papaver",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "μήκων"
+},
+"IV_64": {
+"genus": "Papaver",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "μήκων"
+},
+"IV_65": {
+"genus": "Papaver",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "μήκων"
+},
+"IV_66": {
+"genus": "Papaver",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "μήκων"
+},
+"IV_67": {
+"genus": "Hypecoum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ὑπήκοον·"
+},
+"IV_68": {
+"genus": "Hyoscyamus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ὑοσκύαμος"
+},
+"IV_69": {
+"genus": "Plantago",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ψύλλιον·"
+},
+"IV_70": {
+"genus": "Physalis",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "στρύχνον"
+},
+"IV_72": {
+"genus": "Physalis",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "στρύχνον"
+},
+"IV_73": {
+"genus": "Physalis",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "στρύχνον"
+},
+"IV_74": {
+"genus": "Convolvulus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "δορύκνιον"
+},
+"IV_75": {
+"genus": "Mandragora",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "μανδραγόρας·"
+},
+"IV_76": {
+"genus": "Aconitum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἀκόνιτον"
+},
+"IV_77": {
+"genus": "Aconitum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἀκόνιτον"
+},
+"IV_78": {
+"genus": "Conium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κώνειον"
+},
+"IV_79": {
+"genus": "Quercus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "σμῖλαξ"
+},
+"IV_83": {
+"genus": "Colchicum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "Κολχικόν·"
+},
+"IV_84": {
+"genus": "Colchicum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἐφήμερον·"
+},
+"IV_85": {
+"genus": "Parietaria",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἑλξίνη"
+},
+"IV_87": {
+"genus": "Lens",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "φακὸς"
+},
+"IV_88": {
+"genus": "Sedum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἀείζῳον"
+},
+"IV_89": {
+"genus": "Sedum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἀείζῳον"
+},
+"IV_91": {
+"genus": "Umbilicus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κοτυληδών"
+},
+"IV_95": {
+"genus": "Galium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "γάλιον·"
+},
+"IV_96": {
+"genus": "Senecio",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἡριγέρων"
+},
+"IV_98": {
+"genus": "Lactuca",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "βρύον"
+},
+"IV_100": {
+"genus": "Potamogeton",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ποταμογείτων"
+},
+"IV_101": {
+"genus": "Pistia",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "στρατιώτης"
+},
+"IV_102": {
+"genus": "Pistia",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "στρατιώτης"
+},
+"IV_103": {
+"genus": "Verbascum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "φλόμος·"
+},
+"IV_105": {
+"genus": "Inula",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἄρκτιον"
+},
+"IV_106": {
+"genus": "Arctium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἄρκιον"
+},
+"IV_107": {
+"genus": "Petasites",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "πετασῖτις·"
+},
+"IV_109": {
+"genus": "Fumaria",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "καπνὸς"
+},
+"IV_110": {
+"genus": "Trifolium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "λωτὸς"
+},
+"IV_111": {
+"genus": "Trifolium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "λωτὸς"
+},
+"IV_112": {
+"genus": "Medicago",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κύτισος"
+},
+"IV_113": {
+"genus": "Trifolium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "λωτὸς"
+},
+"IV_114": {
+"genus": "Myriophyllum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "μυριόφυλλον·"
+},
+"IV_115": {
+"genus": "Myrrhis",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "μυρρίς"
+},
+"IV_117": {
+"genus": "Nerium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ὀνάγρα"
+},
+"IV_120": {
+"genus": "Fumaria",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἰσόπυρον·"
+},
+"IV_121": {
+"genus": "Viola",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἴον·"
+},
+"IV_122": {
+"genus": "Mercurialis",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κακκαλία"
+},
+"IV_124": {
+"genus": "Pimpinella",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ψευδοβούνιον·"
+},
+"IV_127": {
+"genus": "Anchusa",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "βούγλωσσον·"
+},
+"IV_128": {
+"genus": "Reseda",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "φύτευμα·"
+},
+"IV_129": {
+"genus": "Ruscus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ὑπόγλωσσον·"
+},
+"IV_130": {
+"genus": "Antirrhinum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἀντίρρινον·"
+},
+"IV_132": {
+"genus": "Aster",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "τριπόλιον·"
+},
+"IV_135": {
+"genus": "Asplenium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "τριχομανές"
+},
+"IV_136": {
+"genus": "Xanthium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ξάνθιον·"
+},
+"IV_137": {
+"genus": "Aegilops",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "αἰγίλωψ"
+},
+"IV_139": {
+"genus": "Polygala",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "πολύγαλον"
+},
+"IV_140": {
+"genus": "Osyris",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ὄσιρις"
+},
+"IV_144": {
+"genus": "Myrtus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "μυρσίνη"
+},
+"IV_145": {
+"genus": "Laurus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "δάφνη"
+},
+"IV_147": {
+"genus": "Vinca",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "χαμαιδάφνη·"
+},
+"IV_148": {
+"genus": "Veratrum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἐλλέβορος"
+},
+"IV_152": {
+"genus": "Delphinium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "σταφὶς"
+},
+"IV_153": {
+"genus": "Thapsia",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "θαψία·"
+},
+"IV_154": {
+"genus": "Spartium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "σπαρτίον"
+},
+"IV_155": {
+"genus": "Silybum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "σίλλυβον·"
+},
+"IV_156": {
+"genus": "Narcissus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "βολβὸς"
+},
+"IV_158": {
+"genus": "Narcissus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "νάρκισσος·"
+},
+"IV_159": {
+"genus": "Euphorbia",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἱπποφαές"
+},
+"IV_160": {
+"genus": "Centaurea",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἱππόφαιστον·"
+},
+"IV_161": {
+"genus": "Ricinus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κίκι·"
+},
+"IV_162": {
+"genus": "Veratrum",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἐλλέβορος"
+},
+"IV_166": {
+"genus": "Euphorbia",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "λαθυρίς·"
+},
+"IV_167": {
+"genus": "Euphorbia",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "πέπλος·"
+},
+"IV_168": {
+"genus": "Euphorbia",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "πεπλίς·"
+},
+"IV_169": {
+"genus": "Euphorbia",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "χαμαισύκη"
+},
+"IV_170": {
+"genus": "Convolvulus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "σκαμμωνία"
+},
+"IV_171": {
+"genus": "Daphne",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "χαμελαία·"
+},
+"IV_172": {
+"genus": "Daphne",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "θυμελαία"
+},
+"IV_175": {
+"genus": "Pyrus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἄπιος·"
+},
+"IV_177": {
+"genus": "Cuscuta",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἐπίθυμον·"
+},
+"IV_180": {
+"genus": "Vinca",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κληματίς·"
+},
+"IV_181": {
+"genus": "Vitis",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἄμπελος"
+},
+"IV_182": {
+"genus": "Vitis",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἄμπελος"
+},
+"IV_183": {
+"genus": "Vitis",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἄμπελος"
+},
+"IV_186": {
+"genus": "Polypodium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "πολυπόδιον·"
+},
+"IV_187": {
+"genus": "Asplenium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "δρυοπτερίς·"
+},
+"IV_188": {
+"genus": "Carthamus",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "κνῆκος·"
+},
+"IV_189": {
+"genus": "Mercurialis",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "λινόζωστις·"
+},
+"IV_190": {
+"genus": "Heliotropium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἡλιοτρόπιον"
+},
+"IV_191": {
+"genus": "Heliotropium",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἡλιοτρόπιον"
+},
+"V_2": {
+"genus": "Vitis",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἄμπελος"
+},
+"V_79": {
+"genus": "Viola",
+"source": "LSJ",
+"confidence": "medium",
+"headword": "ἰὸν"
+}
+}
